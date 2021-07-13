@@ -2,9 +2,12 @@
 
 ## 简介
 常州存量房成交量统计前端页面，采用vue3,vue-router4,vuex4,TypeScript,element-plus,echarts5等技术
-
 ## 演示地址
 [常州存量房成交量统计](https://czsr.ghj.zone)
+
+## 项目截图
+<img alt='screenshot01' src="https://raw.githubusercontent.com/HoganGolden/cz_stockroom_frontend/master/src/assets/images/screenshot1.png" width="70%" style="">
+<img alt='screenshot02' src="https://raw.githubusercontent.com/HoganGolden/cz_stockroom_frontend/master/src/assets/images/screenshot2.jpg" width="40%">
 
 ### 该项目参考了一下项目
 * [vue3-vuex4-ts](https://github.com/IamManchanda/vue3-vuex4-ts)
