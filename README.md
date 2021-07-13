@@ -34,7 +34,7 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 其他
-* 本项目接口请求签名代码src\utils\encrypt.ts未上传
+* src\utils\encrypt.ts 接口签名代码仅为示例代码
 
 ### License
 The content of this project itself is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/), and the underlying source code used to format and display that content is licensed under the [MIT license](https://opensource.org/licenses/MIT).
