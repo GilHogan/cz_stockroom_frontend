@@ -1,0 +1,8 @@
+
+// The :export directive is the magic sauce for webpack
+// https://mattferderer.com/use-sass-variables-in-typescript-and-javascript
+:export {
+  menuBg        : $menuBg;
+  menuText      : $menuText;
+  menuActiveText: $menuActiveText;
+}
