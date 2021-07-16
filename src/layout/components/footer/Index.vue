@@ -6,11 +6,11 @@
         <el-link rel="license" type="primary" href="http://58.216.221.205:8089/NewXxgs/Pages/ClfHouse/ClfHouseIndex.jsp">常州存量房信息公示网</el-link>
       </div>
       <div class="content">
-        <a class="icon" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <a class="icon" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">
           <img alt="知识共享许可协议" style="border-width:0;" :src="LicenseImg" />
         </a>
         本站采用
-        <el-link rel="license" type="primary" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</el-link>许可协议
+        <el-link rel="license" type="primary" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">CC BY-NC-ND 4.0</el-link>许可协议
       </div>
     </div>
     <div class="developer">
