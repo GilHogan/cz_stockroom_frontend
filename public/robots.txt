@@ -55,10 +55,5 @@ Allow: /
 User-agent: MSNBot
 Allow: /
 
-User-agent: Bytespider
-Disallow: /
-
 User-Agent: *
-Disallow: /
-
-Sitemap: http://czsr.ghj.zone
+Allow: /
