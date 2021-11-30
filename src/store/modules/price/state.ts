@@ -17,5 +17,10 @@ export class PriceChartSourceClass {
   "40-60万"?: number | null = null;
   "60-100万"?: number | null = null;
   "≥100万"?: number | null = null;
+  "100-150万"?: number | null = null;
+  "150-200万"?: number | null = null;
+  "200-250万"?: number | null = null;
+  "250-300万"?: number | null = null;
+  "≥300万"?: number | null = null;
   "更新时间"?: string | null = null;
 }

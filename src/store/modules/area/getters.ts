@@ -8,6 +8,7 @@ import {
 } from "./constants";
 import Constants from "@/constant/constants";
 import { AreaState, AreaChartSourceClass } from './state';
+import moment from "moment";
 
 export type Getters = {
   [GetterConstants.GET_AREA_CHART_SOURCE] (state: AreaState): (type: string) => AreaChartSourceClass[];
@@ -57,7 +58,18 @@ export const getters: GetterTree<AreaState, RootState> & Getters = {
           chartData["144-180㎡"] = value;
           break;
         case AreaType.Ge180:
-          chartData["≥180㎡"] = value;
+          if (moment(item.date).isBefore(moment('2021-11-29'))) {
+            chartData["≥180㎡"] = value;
+          }
+          break;
+        case AreaType.Between180_220:
+          chartData["180-220㎡"] = value;
+          break;
+        case AreaType.Between220_260:
+          chartData["220-260㎡"] = value;
+          break;
+        case AreaType.Ge260:
+          chartData["≥260㎡"] = value;
           break;
       }
     });

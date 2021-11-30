@@ -47,6 +47,15 @@ export const getters: GetterTree<DistrictState, RootState> & Getters = {
         case DistrictType.WuJin:
           chartData.武进区 = value;
           break;
+        case DistrictType.JinTan:
+          chartData.金坛区 = value;
+          break;
+        case DistrictType.JinKai:
+          chartData.经开区 = value;
+          break;
+        case DistrictType.LiYang:
+          chartData.溧阳市 = value;
+          break;
       }
     });
     return chartDataList;

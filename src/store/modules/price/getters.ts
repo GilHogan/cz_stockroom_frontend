@@ -8,6 +8,7 @@ import {
 } from "./constants";
 import Constants from "@/constant/constants";
 import { PriceState, PriceChartSourceClass } from './state';
+import moment from "moment";
 
 export type Getters = {
   [GetterConstants.GET_PRICE_CHART_SOURCE] (state: PriceState): (type: string) => PriceChartSourceClass[];
@@ -51,7 +52,24 @@ export const getters: GetterTree<PriceState, RootState> & Getters = {
           chartData["60-100万"] = value;
           break;
         case PriceType.Ge100:
-          chartData["≥100万"] = value;
+          if (moment(item.date).isBefore(moment('2021-11-29'))) {
+            chartData["≥100万"] = value;
+          }
+          break;
+        case PriceType.Between100_150:
+          chartData["100-150万"] = value;
+          break;
+        case PriceType.Between150_200:
+          chartData["150-200万"] = value;
+          break;
+        case PriceType.Between200_250:
+          chartData["200-250万"] = value;
+          break;
+        case PriceType.Between250_300:
+          chartData["250-300万"] = value;
+          break;
+        case PriceType.Ge300:
+          chartData["≥300万"] = value;
           break;
       }
     });

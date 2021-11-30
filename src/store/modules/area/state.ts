@@ -19,5 +19,8 @@ export class AreaChartSourceClass {
   "120-144㎡"?: number | null = null;
   "144-180㎡"?: number | null = null;
   "≥180㎡"?: number | null = null;
+  "180-220㎡"?: number | null = null;
+  "220-260㎡"?: number | null = null;
+  "≥260㎡"?: number | null = null;
   "更新时间"?: string | null = null;
 }

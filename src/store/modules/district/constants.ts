@@ -17,4 +17,7 @@ export enum DistrictType {
   ZhongLou = 1, //  钟楼区
   XinBei = 2, //  新北区
   WuJin = 3, //  武进区
+  JinTan = 4, //  金坛区
+  JinKai = 5, //  经开区
+  LiYang = 6, //  溧阳市
 }

@@ -15,5 +15,8 @@ export class DistrictChartSourceClass {
   "钟楼区"?: number | null = null;
   "新北区"?: number | null = null;
   "武进区"?: number | null = null;
+  "金坛区"?: number | null = null;
+  "经开区"?: number | null = null;
+  "溧阳市"?: number | null = null;
   "更新时间"?: string | null = null;
 }
