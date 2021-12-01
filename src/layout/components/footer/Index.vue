@@ -3,7 +3,7 @@
     <div class="license">
       <div class="explain">
         本站统计数据来源于
-        <el-link rel="license" type="primary" href="http://58.216.221.205:8089/NewXxgs/Pages/ClfHouse/ClfHouseIndex.jsp">常州存量房信息公示网</el-link>
+        <el-link rel="license" type="primary" href="https://hy.house0519.com/gsxx/gsxx/ClfHouseIndex">常州存量房信息公示网</el-link>
       </div>
       <div class="content">
         <a class="icon" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">
