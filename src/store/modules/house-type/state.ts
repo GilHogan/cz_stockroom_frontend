@@ -19,7 +19,7 @@ export class HouseTypeChartSourceClass {
   "厂房"?: number | null = null;
   "商住"?: number | null = null;
   "车库"?: number | null = null;
-  "其它"?: number | null = null;
+  "其他"?: number | null = null;
   "累计"?: number | null = null;
   "更新时间"?: string | null = null;
 }

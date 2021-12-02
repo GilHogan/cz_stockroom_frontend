@@ -21,6 +21,6 @@ export enum HouseTypeType {
   Plant = 5, // 厂房
   CommercialAndResidential = 6, // 商住
   Garage = 7, // 车库
-  Other = 8, // 其它
+  Other = 8, // 其他
   Total = 9, // 今日累计成交
 }

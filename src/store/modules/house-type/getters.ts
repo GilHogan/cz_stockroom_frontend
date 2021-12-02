@@ -60,7 +60,7 @@ export const getters: GetterTree<HouseTypeState, RootState> & Getters = {
           chartData.车库 = value;
           break;
         case HouseTypeType.Other:
-          chartData.其它 = value;
+          chartData.其他 = value;
           break;
         case HouseTypeType.Total:
           chartData.累计 = value;
