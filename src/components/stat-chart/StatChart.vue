@@ -33,7 +33,7 @@ export default defineComponent({
     loading: { type: Boolean, default: false },
     lineChartId: { type: String, default: 'lineChartsComponents' },
     queryTypeProp: { type: String as PropType<string>, default: Constants.QueryType.number },
-    statTypeProp: { type: String as PropType<string>, default: Constants.StatType.month }
+    statTypeProp: { type: String as PropType<string>, default: Constants.StatType.day }
   },
 
   components: {

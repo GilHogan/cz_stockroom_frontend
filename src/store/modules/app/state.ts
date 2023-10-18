@@ -43,7 +43,7 @@ export const state: AppState = {
   },
   size: getSize() || 'medium',
   queryType: getQueryType() || Constants.QueryType.number,
-  statType: getStatType() || Constants.StatType.month,
+  statType: getStatType() || Constants.StatType.day,
   params: {
     startAt: '',
     endAt: '',

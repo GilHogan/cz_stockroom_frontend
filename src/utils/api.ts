@@ -4,7 +4,7 @@ import Constants from '@/constant/constants';
 
 const service = axios.create({
   baseURL: process.env.VUE_APP_BASE_API,
-  timeout: 20000
+  timeout: 1000 * 60
 });
 
 service.interceptors.request.use(
