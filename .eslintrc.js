@@ -25,5 +25,10 @@ module.exports = {
     'object-property-newline': 'off',
     'no-prototype-builtins': 'warn',
     '@typescript-eslint/no-empty-function': 'warn',
+    'space-before-function-paren': ['error', {
+      anonymous: 'ignore',
+      named: 'ignore',
+      asyncArrow: 'ignore'
+    }]
   }
 }
