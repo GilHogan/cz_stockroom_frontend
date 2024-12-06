@@ -14,6 +14,7 @@ import { defineComponent, ref } from 'vue'
 import { request, ResponseType } from '@/utils/api';
 import { sign } from '@/utils/encrypt'
 import Constants from '@/constant/constants';
+import { ElLoading } from 'element-plus';
 
 export default defineComponent({
   name: 'App',
@@ -26,15 +27,27 @@ export default defineComponent({
     const turnstileRef = ref<any>(null);
 
     const onSuccessHandle = async (e: string) => {
-      console.log("Turnstile Verify on success.");
+      const loading = ElLoading.service({
+        lock: true,
+        text: 'Loading',
+        background: 'rgba(0, 0, 0, 0.7)',
+      })
       const header = { [Constants.Sign.key]: sign() };
-      const res: ResponseType<boolean> = await request('POST', { token: e }, "/api/verify_turnstile", header);
-      if (res.data) {
+      let res: ResponseType<boolean> | null = null;
+      try {
+        const origin = window.location.origin;
+        res = await request('POST', { token: e }, origin + "/api/stockroom/cf-turnstile-verify/", header);
+      } catch (error) {
+        console.log("Server Verify Turnstile error ", error);
+      }
+      if (res && res.data) {
+        console.log("Verify Turnstile on success.");
         isVerifySuccess.value = true;
       } else {
+        console.log("Verify Turnstile failed.");
         turnstileRef.value.reset();
       }
-
+      loading.close();
     }
     return {
       token,
