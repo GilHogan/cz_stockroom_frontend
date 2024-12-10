@@ -15,10 +15,7 @@
     </div>
     <div class="developer">
       <span>Copyright©2025 </span>
-      <el-link style="padding-left: 4px;" type="primary" href="https://github.com/GilHogan">GilHogan</el-link>
-      <el-link :underline="false" style="padding-left: 4px; line-height: 12px;" href="https://github.com/GilHogan/cz_stockroom_frontend">
-        <svg-icon iconClass="gitHub" />
-      </el-link>
+      <span style="padding-left: 4px;" type="primary">GilHogan</span>
     </div>
   </div>
 </template>
