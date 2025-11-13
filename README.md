@@ -1,5 +1,7 @@
 # stockroom_frontend_el_ts
 
+目前常州存量房信息公示网已无法访问 :disappointed_relieved:，故归档该项目。
+
 ## 简介
 常州存量房成交量统计前端页面，采用vue3,vue-router4,vuex4,TypeScript,element-plus,echarts5等技术
 ## 演示地址
